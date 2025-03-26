@@ -1,0 +1,13 @@
+import { describe, expect, it, vi } from 'vitest'
+import printTheGreatestNumber from './task-4.ts'
+
+describe('printTheGreatestNumber', () => {
+  it('The greatest numbers of 108 will be:', () => {
+    const consoleSpy = vi.spyOn(console, 'log')
+
+    printTheGreatestNumber(108)
+
+    expect(consoleSpy).toHaveBeenCalledWith(8)
+    expect(consoleSpy).toHaveBeenCalledTimes(1)
+  })
+})
