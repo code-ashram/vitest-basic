@@ -1,4 +1,7 @@
-/* 3. Display in console which digit of value is greater */
+/**
+ * The function prints the greatest numbers of your value to the console
+ * @param {number} value - Number that you want to work with
+ */
 
 const printTheGreatestNumber = (value: number) => {
   const s = value.toString()

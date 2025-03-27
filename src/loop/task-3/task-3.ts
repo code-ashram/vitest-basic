@@ -1,4 +1,7 @@
-/* 3. Print the sum of even numbers of number n */
+/**
+ * The function prints the sum of even numbers of your value to the console
+ * @param {number} value - Number that you want to work with
+ */
 
 export const printSumOfEvenNumbers = (value: number): void => {
   const s = value.toString()
