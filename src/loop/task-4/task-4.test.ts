@@ -10,4 +10,22 @@ describe('printTheGreatestNumber', () => {
     expect(consoleSpy).toHaveBeenCalledWith(8)
     expect(consoleSpy).toHaveBeenCalledTimes(1)
   })
+
+  it('The greatest numbers of 1488 will be:', () => {
+    const consoleSpy = vi.spyOn(console, 'log')
+
+    printTheGreatestNumber(8)
+
+    expect(consoleSpy).toHaveBeenCalledWith(8)
+    expect(consoleSpy).toHaveBeenCalledTimes(1)
+  })
+
+  it('The greatest numbers of 13 will be:', () => {
+    const consoleSpy = vi.spyOn(console, 'log')
+
+    printTheGreatestNumber(3)
+
+    expect(consoleSpy).toHaveBeenCalledWith(3)
+    expect(consoleSpy).toHaveBeenCalledTimes(1)
+  })
 })
